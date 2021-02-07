@@ -1,8 +1,12 @@
 :root {
     --primary-color:#6c7a86;
     --secondary-color: #00bfff;;
-    --tertiary-color: #b3b6b8;
+    --tertiary-color: #d8d9da;
   }
+
+* {
+    box-sizing: border-box;
+}
 
 
 body {
@@ -35,7 +39,7 @@ header{
 }
 
 header a {
-    color: #b3b6b8;
+    color: var(--tertiary-color);
     text-decoration: lighter;
     text-transform: uppercase;
     font-size: 10px;
@@ -58,4 +62,28 @@ header #initials {
 
 #initials h1 {
     margin: 0;
+}
+
+.row {
+    margin: 8px 0;
+}
+
+.row, .row> .column {
+    padding: 6px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.work {
+    background-color: var(--tertiary-color);
+    padding: 12px;
 }
