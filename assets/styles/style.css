@@ -4,18 +4,17 @@
     --tertiary-color: #c5c6c7;
   }
 
+  /* Global */
 * {
     box-sizing: border-box;
 }
 
-
 body {
-    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    font: 20px/1.5 Arial, Helvetica, sans-serif;
     background-color:var(--primary-color);
     color:var(--tertiary-color);
 }
 
-/* Global */
 .container {
     width: 80%;
     margin: auto;
@@ -30,16 +29,53 @@ ul {
     padding: 0;
 }
 
-/* Header */
+a {
+    color: var(--tertiary-color);
+    text-decoration: lighter;
+    text-transform: uppercase;
+    font-size: 15px;
+}
 
+/* Header Section */
 header{
     background:#1F2833;
     color: var(--secondary-color);
     border-bottom: #45A29E 3px solid;
 }
 
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header a:hover {
+    font-weight: bolder;
+}
+
+header nav {
+    max-width: 1200px;
+    display: flex;
+}
+
+header li {
+    float: left;
+    display: flex;
+    padding: 0 20px
+}
+
+header #initials {
+    float: left;
+    font: bolder;
+}
+
+#initials h1 {
+    margin: 0;
+}
 
 
+/* Showcase section */
 .showcase {
     display: flex;
     flex-wrap: wrap;
@@ -64,48 +100,13 @@ header{
 }
 
 
-
-.site-header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-header a {
-    color: var(--tertiary-color);
-    text-decoration: lighter;
-    text-transform: uppercase;
-    font-size: 10px;
-}
-
-header nav {
-    max-width: 1200px;
-    display: flex;
-}
-
-header li {
-    float: left;
-    display: flex;
-    padding: 0 20px
-}
-
-header #initials {
-    float: left;
-    font: bolder;
-}
-
-#initials h1 {
-    margin: 0;
-}
-
+/* About me Section */
 #aboutme {
     border-bottom:#45A29E 3px solid;
 }
 
-#contact {
-    border-top: #45A29E 3px solid;
-}
+
+/* My Work Section */
 
 .row {
     margin: 8px 0;
@@ -136,8 +137,13 @@ header #initials {
     padding: 12px;
 }
 
+#contact {
+    border-top: #45A29E 3px solid;
+    margin-bottom: 20px;
+}
 
 
+/* Media Queries */
 @media screen and (max-width: 900px) {
     .column {
         width: 50%;
