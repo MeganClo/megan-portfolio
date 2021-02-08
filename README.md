@@ -4,8 +4,7 @@
 A portfolio webpage I can use to showcase my work to potential employers with a link for them to email me. 
 
 ## Built With
-HTML
-CSS
+HTML and CSS
 
 ## Website
 https://meganclo.github.io/megan-portfolio/
