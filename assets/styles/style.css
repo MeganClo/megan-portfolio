@@ -2,7 +2,6 @@
     --primary-color:#0B0c10;
     --secondary-color: #66fcf1;
     --tertiary-color: #c5c6c7;
-    --
   }
 
 * {
@@ -33,6 +32,26 @@ header{
     background:#1F2833;
     color: var(--secondary-color);
     border-bottom: #45A29E 3px solid;
+}
+
+.showcase {
+    display: flex;
+    justify-content: center;
+}
+
+.showcase h1 {
+    font-size: 80px;
+}
+
+.showcase img {
+    height: 200px;
+    max-width: 100vw;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.highlight {
+    color: var(--secondary-color)
 }
 
 .site-header {
@@ -90,7 +109,7 @@ header #initials {
 
 .latest-work {
     margin: auto;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .work {
@@ -103,6 +122,9 @@ header #initials {
 @media screen and (max-width: 900px) {
     .column {
         width: 50%;
+    }
+    .latest-work {
+        width: 100%;
     }
 }
 
